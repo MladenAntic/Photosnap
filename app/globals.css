@@ -2,32 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html,
+body {
+  overflow-x: hidden;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  width: 100vw;
+}
+
+.facebook:hover {
+  color: #1877f2;
+}
+
+.youtube:hover {
+  color: #ff0000;
+}
+
+.twitter:hover {
+  color: #1da1f2;
+}
+
+.pinterest:hover {
+  color: #e60023;
+}
+
+.instagram:hover {
+  color: #c13584;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .invite-btn {
+    @apply flex items-center justify-center bg-black text-white hover:bg-lightgrey hover:text-black transition-colors duration-200 uppercase text-center;
+  }
+
+  .heading {
+    @apply text-[40px] font-bold uppercase leading-[48px] tracking-[4.167px] max-[400px]:text-[32px] 3xl:text-[64px] 3xl:leading-[64px] max-sm:text-[32px];
+  }
+
+  .paragraph {
+    @apply text-[15px] leading-[25px] max-[400px]:my-5 max-[400px]:text-xs 3xl:text-2xl 3xl:leading-[40px];
+  }
+
+  .table-heading {
+    @apply text-black text-xs font-bold tracking-[2px] uppercase 3xl:text-base max-sm:text-[8px];
   }
 }
