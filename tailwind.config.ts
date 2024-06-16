@@ -14,6 +14,7 @@ const config = {
     "./components/**/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
+    "./constants/**/*.{ts,tsx}",
   ],
   prefix: "",
   theme: {
@@ -24,6 +25,7 @@ const config = {
     extend: {
       colors: {
         lightgrey: "#dfdfdf",
+        mediumgrey: "#f5f5f5"
       },
       screens: {
         "3xl": "1920px",
