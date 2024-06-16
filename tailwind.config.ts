@@ -23,10 +23,7 @@ const config = {
     },
     extend: {
       colors: {
-        black: "#000",
-        white: "#fff",
         lightgrey: "#dfdfdf",
-        mediumgrey: "#f5f5f5",
       },
       screens: {
         "3xl": "1920px",
